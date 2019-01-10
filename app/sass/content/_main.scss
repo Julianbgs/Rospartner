@@ -1,0 +1,164 @@
+.main {
+  position: relative;
+  float: left;
+  width: 100%;
+
+  &__body {
+    position: relative;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    color: #2c2c2c;
+    font-family: $Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+
+  &__descr {
+    position: relative;
+    width: 100%;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+
+    &-link {
+      color: #2196f3;
+      text-decoration: underline;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__fields-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 22px;
+  }
+
+  &__field {
+    position: relative;
+    width: 30%;
+    background-color: #f7f7fa;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+    &--mod {
+      background-color: #eaeaee;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid #2196f3;
+      }
+    }
+
+    &-label {
+      position: relative;
+      width: 100%;
+      opacity: 0.75;
+      color: #27252a;
+      font-family: $Roboto;
+      font-size: 13px;
+      font-weight: 400;
+
+      &--mod {
+        opacity: 1;
+        color: #27252a;
+      }
+    }
+
+    &-input {
+      position: relative;
+      width: 90%;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__color {
+    color: #2196f3;
+  }
+
+  &__border {
+    border: 2px solid #2196f3;
+  }
+
+  &__textarea-wrap {
+    position: relative;
+    width: 100%;
+    background-color: #f7f7fa;
+    border-radius: 4px;
+    margin-top: 22px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  &__textarea-label{
+    position: relative;
+    width: 100%;
+    color: #27252a;
+    font-family: $Roboto;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &__textarea{
+    position: relative;
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__buttons-group{
+    position: relative;
+    width: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  &__submit{
+    position: relative;
+    border: none;
+    background-image: linear-gradient(45deg, #00a1f9 0%, #008dfe 100%), linear-gradient(to top, black 0%, white 100%);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
+    color: white;
+    padding: 10px 18px;
+    box-sizing: border-box;
+  }
+
+  &__reset{
+    position: relative;
+    border: none;
+    background-color: #e5e9ef;
+    border-radius: 4px;
+    color: black;
+    padding: 10px 18px;
+    box-sizing: border-box;
+  }
+
+  &__callback{
+    position: relative;
+    width: 10;
+  }
+
+}
+

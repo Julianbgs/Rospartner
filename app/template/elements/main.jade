@@ -1,0 +1,46 @@
+section.main
+    .container
+        .main__body
+            h1.main__title
+                | Основная информация
+
+            p.main__descr
+                | Sed ut perspiciatis,
+                a(href="#").main__descr-link
+                    | unde omnis iste
+                | natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo
+                | inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem,
+                | quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.
+
+
+            form.main__callback
+                .main__fields-wrap
+                    #field.main__field
+                        label.main__field-label#label
+                            | Название группы
+
+                        input(type="text").main__field-input
+
+                    .main__field
+                        label.main__field-label
+                            | ФИО ответственного
+
+                        input(type="text" value="Михайлов Игорь Петрович").main__field-input
+
+                    .main__field.main__field--mod
+                        label.main__field-label.main__field-label--mod
+                            | Email для входа
+
+                        input(type="text" placeholder="Введите название").main__field-input
+
+                .main__textarea-wrap
+                    label.main__textarea-label
+                        | Описание рабочей группы
+
+                    textarea(placeholder="Введите краткое и емкое описание для рабочей группы").main__textarea
+
+                .main__buttons-group
+                    input(type="submit" value="Сохранить").main__submit
+
+                    input(type="reset" value="Отмена").main__reset
+
