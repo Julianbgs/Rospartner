@@ -358,7 +358,67 @@ textarea:active {
 
 .main__callback {
   position: relative;
-  width: 10;
+  width: 100%;
+}
+
+.main__notification {
+  position: relative;
+  width: 100%;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 100px;
+}
+
+.main__warning {
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main__warning-icon {
+  position: relative;
+  float: left;
+  width: 10%;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding-left: 30px;
+}
+
+.main__warning-title {
+  position: relative;
+  width: 100%;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.main__warning-descr {
+  position: relative;
+  width: 100%;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.warning {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=37)";
+  opacity: 0.37;
+  color: white;
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
 }
 
 /*# sourceMappingURL=styles.css.map */
