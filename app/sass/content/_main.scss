@@ -108,7 +108,7 @@
     box-sizing: border-box;
   }
 
-  &__textarea-label{
+  &__textarea-label {
     position: relative;
     width: 100%;
     color: #27252a;
@@ -117,7 +117,7 @@
     font-weight: 400;
   }
 
-  &__textarea{
+  &__textarea {
     position: relative;
     width: 100%;
     resize: none;
@@ -125,7 +125,7 @@
     border: none;
   }
 
-  &__buttons-group{
+  &__buttons-group {
     position: relative;
     width: 215px;
     display: flex;
@@ -134,7 +134,7 @@
     margin-top: 25px;
   }
 
-  &__submit{
+  &__submit {
     position: relative;
     border: none;
     background-image: linear-gradient(45deg, #00a1f9 0%, #008dfe 100%), linear-gradient(to top, black 0%, white 100%);
@@ -145,7 +145,7 @@
     box-sizing: border-box;
   }
 
-  &__reset{
+  &__reset {
     position: relative;
     border: none;
     background-color: #e5e9ef;
@@ -155,12 +155,12 @@
     box-sizing: border-box;
   }
 
-  &__callback{
+  &__callback {
     position: relative;
     width: 100%;
   }
 
-  &__notification{
+  &__notification {
     position: relative;
     width: 100%;
     color: #2c2c2c;
@@ -170,7 +170,7 @@
     margin-top: 100px;
   }
 
-  &__warning{
+  &__warning {
     position: relative;
     width: 100%;
     margin-top: 35px;
@@ -180,7 +180,7 @@
     padding-bottom: 1px;
     box-sizing: border-box;
 
-    &-icon{
+    &-icon {
       position: relative;
       float: left;
       width: 10%;
@@ -189,7 +189,7 @@
       padding-left: 30px;
     }
 
-    &-title{
+    &-title {
       position: relative;
       width: 100%;
       text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.2);
@@ -201,7 +201,7 @@
 
     }
 
-    &-descr{
+    &-descr {
       position: relative;
       width: 100%;
       text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.2);
@@ -212,11 +212,124 @@
     }
   }
 
+  &__socials-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 65px;
+  }
+
+  &__social {
+    position: relative;
+    width: 22%;
+  }
+
+  &__social-top {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border: 8px solid #fcfcfc;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 0 3px 5.9px 0.1px rgba(0, 0, 0, 0.09);
+  }
+
+  &__social-img {
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    overflow: hidden;
+    width: 54px;
+    height: 54px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__social-title {
+    position: relative;
+    width: 100%;
+    color: #2c2c2c;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__social-down {
+    position: relative;
+    width: 100%;
+    background-color: #f4f4f6;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  &__social-button {
+    position: relative;
+    width: 100%;
+    background-color: #e1e1e3;
+    border-radius: 4px;
+    padding: 10px 40px;
+    color: #2c2c2c;
+    font-family: $Roboto;
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
 
-.warning{
+.warning {
   opacity: 0.37;
   color: white;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
 }
+
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.checkbox__text {
+  position: relative;
+  padding: 0 0 25px 0;
+  cursor: pointer;
+  color: #2c2c2c;
+  font-family: $Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.checkbox__text:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 27px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 2px solid grey;
+  transition: .2s;
+}
+
+.checkbox input:checked + .checkbox__text:before {
+  background-image: url("../img/checkbox.png");
+}
+
+
 
