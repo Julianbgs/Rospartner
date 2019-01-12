@@ -61,10 +61,12 @@ section.main
                     | dicta sunt, explicabo. nemo enim ipsam voluptatem.
 
             .main__socials-wrap
-                .main__social
+                #Telegram.main__social
                     .main__social-top
-                        .main__social-img
+                        #telegram-gray.main__social-img.grayscale
                             img(src="img/Telegram.png")
+
+                        span#telegram-dot
 
                         p.main__social-title
                             | Telegram
@@ -78,47 +80,67 @@ section.main
                             p.checkbox__text
                                 | Только служебные
 
-                .main__social
+                #ICQ.main__social
                     .main__social-top
-                        .main__social-img
-                            img(src="img/Telegram.png")
+                        #icq-gray.main__social-img.grayscale
+                            img(src="img/ICQ.png")
+
+                        span#icq-dot
 
                         p.main__social-title
-                            | Telegram
+                            | ICQ
 
                     .main__social-down
-                        .main__box
-                            a(href="#").main__social-button Отключить аккаунт
+                        p.main__social-descr
+                            | 1. Скопируйте команду авторизации
 
-                        label.checkbox
-                            input(type="checkbox")
-                            p.checkbox__text
-                                | Только служебные
+                        span.main__social-icon
+                            i.material-icons.filter
+                                | filter_none
 
-                .main__social
+                        p.main__social-sub-descr
+                            | 2. Перейдите в чат
+                            | и отправьте команду боту
+
+                        span.main__social-icon
+                            i.material-icons.filter
+                                | filter_none
+
+                #Skype.main__social
                     .main__social-top
-                        .main__social-img
-                            img(src="img/Telegram.png")
+                        #skype-gray.main__social-img.grayscale
+                            img(src="img/Skype.png")
+
+                        span#skype-dot
 
                         p.main__social-title
-                            | Telegram
+                            | Skype
 
                     .main__social-down
-                        .main__box
-                            a(href="#").main__social-button Отключить аккаунт
+                        p.main__social-descr
+                            | 1. Скопируйте команду авторизации
 
-                        label.checkbox
-                            input(type="checkbox")
-                            p.checkbox__text
-                                | Только служебные
+                        span.main__social-icon
+                            i.material-icons.filter
+                                | filter_none
 
-                .main__social
+                        p.main__social-sub-descr
+                            | 2. Перейдите в чат
+                            | и отправьте команду боту
+
+                        span.main__social-icon
+                            i.material-icons.filter
+                                | filter_none
+
+                #Slack.main__social
                     .main__social-top
-                        .main__social-img
-                            img(src="img/Telegram.png")
+                        #slack-gray.main__social-img.grayscale
+                            img(src="img/Slack.png")
+
+                        span#slack-dot
 
                         p.main__social-title
-                            | Telegram
+                            | Slack
 
                     .main__social-down
                         .main__box

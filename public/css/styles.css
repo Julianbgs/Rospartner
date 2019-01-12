@@ -427,6 +427,7 @@ textarea:active {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 65px;
+  margin-bottom: 100px;
 }
 
 .main__social {
@@ -448,7 +449,7 @@ textarea:active {
 .main__social-img {
   position: absolute;
   top: -30px;
-  left: 40%;
+  left: 38%;
   overflow: hidden;
   width: 54px;
   height: 54px;
@@ -459,6 +460,7 @@ textarea:active {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .main__social-title {
@@ -475,6 +477,7 @@ textarea:active {
 .main__social-down {
   position: relative;
   width: 100%;
+  height: 118px;
   background-color: #f4f4f6;
   border-radius: 0px 0px 4px 4px;
 }
@@ -499,12 +502,61 @@ textarea:active {
   font-weight: 400;
 }
 
+.main__social-descr {
+  position: relative;
+  float: left;
+  width: 80%;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main__social-icon {
+  position: relative;
+}
+
+.main__social-sub-descr {
+  position: relative;
+  float: left;
+  width: 80%;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .warning {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=37)";
   opacity: 0.37;
   color: white;
   -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13);
+}
+
+.filter {
+  position: relative;
+  width: 20%;
+  font-size: 21px;
+  padding-top: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.filter:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
 }
 
 .checkbox input {
@@ -542,6 +594,27 @@ textarea:active {
 
 .checkbox input:checked + .checkbox__text:before {
   background-image: url("../img/checkbox.png");
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.dot {
+  position: relative;
+}
+
+.dot:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  left: 50px;
+  top: 33px;
+  background-image: url("../img/dot.png");
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=styles.css.map */
